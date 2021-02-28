@@ -1,0 +1,163 @@
+.action_container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0 30px 0;
+
+  form {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    box-shadow: 0 0 6px 1px #7a8aff2b;
+    border-radius: 4px;
+
+    .add_form_header {
+      font-size: 22px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    input {
+      padding: 5px;
+    }
+
+    textarea {
+      width: 100%;
+      resize: none;
+      height: 100px;
+      margin: 10px 0;
+      padding: 5px;
+    }
+
+    .add_form_color_cont {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #fff;
+      margin-bottom: 10px;
+
+      .rc-color-picker-wrap {
+        height: 20px;
+      }
+    }
+
+    .add_form_action_buttons {
+      display: flex;
+      justify-content: center;
+
+      button {
+        width: 80px;
+        height: 25px;
+        border-radius: 4px;
+        font-weight: bold;
+        background-color: #fff;
+        color: #213462;
+        border: none;
+        margin: 0 10px;
+        cursor: pointer;
+
+        &:nth-child(2) {
+          background-color: transparent;
+          color: #ff2626;
+          border: 1px solid #ff2626;
+
+          &:hover {
+            color: #fff;
+            background-color: #ff2626;
+          }
+        }
+      }
+    }
+  }
+
+  .delete_all_button {
+    width: 80px;
+    height: 25px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #ff2626;
+    background-color: transparent;
+    cursor: pointer;
+    border: 1px solid #ff2626;
+
+      &:hover {
+        color: #fff;
+        background-color: #ff2626;
+      }
+  }
+}
+
+.loader {
+    width: 100vw;
+    height: 100vh;
+    background-color: #213462;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .sk-cube-grid {
+      width: 60px;
+      height: 60px;
+    
+      .sk-cube {
+        width: 33%;
+        height: 33%;
+        background-color: #fff;
+        float: left;
+        -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+                animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out; 
+      }
+    
+      .sk-cube1 {
+        -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s; }
+      .sk-cube2 {
+        -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s; }
+      .sk-cube3 {
+        -webkit-animation-delay: 0.4s;
+                animation-delay: 0.4s; }
+      .sk-cube4 {
+        -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s; }
+      .sk-cube5 {
+        -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s; }
+      .sk-cube6 {
+        -webkit-animation-delay: 0.3s;
+                animation-delay: 0.3s; }
+      .sk-cube7 {
+        -webkit-animation-delay: 0s;
+                animation-delay: 0s; }
+      .sk-cube8 {
+        -webkit-animation-delay: 0.1s;
+                animation-delay: 0.1s; }
+      .sk-cube9 {
+        -webkit-animation-delay: 0.2s;
+                animation-delay: 0.2s; }
+    }
+  }
+  
+  @-webkit-keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1); 
+    }
+  }
+  
+  @keyframes sk-cubeGridScaleDelay {
+    0%, 70%, 100% {
+      -webkit-transform: scale3D(1, 1, 1);
+              transform: scale3D(1, 1, 1);
+    } 35% {
+      -webkit-transform: scale3D(0, 0, 1);
+              transform: scale3D(0, 0, 1);
+    } 
+  }
